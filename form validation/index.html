@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <div id="form1">
+            <p id="nameerror"></p>
+           Name :- <input type="text" id="name" placeholder="Name">
+           <p id="numerror"></p>
+           Number :- <input type="number" id="number" placeholder="Enter your number">
+           <p id="emailerror"></p>
+           Email :- <input type="email" id="email" placeholder="Enter your email">
+           <p id="passerror"></p>
+           Password :- <input type="password" id="password" placeholder="Enter your password">
+           <p id="confromerror"></p>
+           Confrom Password :- <input type="password" id="password2" placeholder="Confrom password">
+           <div id="submit1">
+              <input type="submit" value="Submit"  onclick="return validateForm()">
+            </div>
+        </div>
+    </form>
+    <script src="first.js"></script>
+</body>
+</html>

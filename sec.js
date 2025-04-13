@@ -70,4 +70,21 @@ function outer(){
 let sum1 = (a,b)=>{
     return a+b;
 };
-console.log(sum1(10,20)); // 30
+
+
+
+
+// if (email === "") {
+    //     inp[2].style.border = "12px solid red";
+    //     return false;
+    // }
+    // if (!email.includes("@") || !email.includes(".com")) {
+    //     inp[2].style.border = "12px solid red";
+    //     alert("Please enter @ and .com in email");
+    //     return false;
+    // }
+    // if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { // Check if the name contains only letters and spaces
+    //     inp[2].style.border = "12px solid red";
+    //     alert("Please enter first letters in the email field then number");
+    //     return false;
+    // }
