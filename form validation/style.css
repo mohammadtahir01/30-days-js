@@ -12,7 +12,13 @@
     width: 300px;
     margin: auto; 
     gap: 10px;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+#form1 input{
+    outline: none;
+    font-size: 17px;
+    padding: 5px 5px 5px 10px;
 }
 
 #submit1{

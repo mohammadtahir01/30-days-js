@@ -9,54 +9,59 @@ let validateForm = () => {
 
     // Validate Name
     if (name === "") {
-        inp[0].style.border = "12px solid red";
+        inp[0].style.border = "2px solid red";
         alert("Name field cannot be empty");
         return false;
     }
     if (!/^[A-Za-z\s]+$/.test(name)) { // Check if the name contains only letters and spaces
-        inp[0].style.border = "12px solid red";
+        inp[0].style.border = "2px solid red";
         alert("Please enter only letters in the name field");
         return false;
     }
 
     // Validate Number
     if (num === "") {
-        inp[1].style.border = "12px solid red";
+        inp[1].style.borderRadius="10px";
+        inp[1].style.border = "2px solid red";
         alert("Number field cannot be empty");
         return false;
     }
     if (num.length !== 10) { // Ensure the number is exactly 10 digits
-        inp[1].style.border = "12px solid red";
+        inp[1].style.border = "2px solid red";
         alert("Number must be exactly 10 digits");
         return false;
     }
     if (isNaN(num)) { // Ensure the input is numeric
-        inp[1].style.border = "12px solid red";
+        inp[1].style.border = "2px solid red";
         alert("Please enter only numbers in the number field");
         return false;
     }
 
     // Validate Email
     if (!isValidEmail(email)) {
-        inp[2].style.border = "12px solid red";
+        inp[2].style.border = "2px solid red";
         alert("Please enter a valid email address ending with '@gmail.com'");
         return false;
     }
 
     // Validate Password
     if (password === "") {
-        inp[3].style.border = "12px solid red";
+        inp[3].style.border = "2px solid red";
         alert("Password field cannot be empty");
         return false;
     }
     if (confirmPassword === "") {
-        inp[4].style.border = "12px solid red";
+        inp[4].style.border = "2px solid red";
         alert("Confirm Password field cannot be empty");
+       
         return false;
     }
     if (password !== confirmPassword) {
-        inp[3].style.border = "12px solid red";
-        inp[4].style.border = "12px solid red";
+        inp[3].style.border = "2px solid red";
+        document.querySelector("#password2").value = "";
+        document.querySelector("#password2").focus();
+        // inp[3].style.borderRadius="2px";
+        // inp[4].style.border = "12px solid red";
         alert("Passwords do not match");
         return false;
     }
