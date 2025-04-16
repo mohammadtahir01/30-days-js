@@ -50,10 +50,14 @@ let fruits = ["tahir", 25,"bhopal"] //this is array
 
 let f1=()=>{
     let inp = document.querySelector("#show")
+    let inp1 = document.querySelector("#btn");
 
     if(inp.style.display==="flex"){
         inp.style.display="none";
+        inp1.innerHTML="show"
+
     }else{
         inp.style.display="flex";
+        inp1.innerHTML="Button1"
     }
 }
