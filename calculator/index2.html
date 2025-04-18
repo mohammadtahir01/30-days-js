@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #tr0 td{
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: transparent;
+      color: white;
+      font-size: 24px;
+      border-radius: 10px;
+    }
+    #tr1 th{
+      border-radius: 50%;
+      font-size: 17px;
+      box-shadow: -2px -7px 15px rgba(255, 255, 255, 0.1), 0px 12px 15px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+    #tr2 th{
+      border-radius: 50%;
+      font-size: 17px;
+      box-shadow: -2px -7px 15px rgba(255, 255, 255, 0.1), 0px 12px 15px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+    #tr3 th{
+      border-radius: 50%;
+      font-size: 17px;
+      box-shadow: -2px -7px 15px rgba(255, 255, 255, 0.1), 0px 12px 15px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+    #tr4 th{
+      border-radius: 50%;
+      font-size: 17px;
+      box-shadow: -2px -7px 15px rgba(255, 255, 255, 0.1), 0px 12px 15px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+    #tr5 th{
+      border-radius: 50%;
+      font-size: 17px;
+      box-shadow: -2px -7px 15px rgba(255, 255, 255, 0.1), 0px 12px 15px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+</style>
+<body>
+    <table border="1" cellpadding="20px" cellspacing="20px" align="center" style="margin-top: 1%; background-color: rgba(0, 0, 0, 0.795); border-radius: 10px;" >
+        <tr id="tr0">
+            <td colspan="4 " id="show" style="height: 20px;"></td>
+             <!-- <input type="text" id="show"> -->
+        </tr>
+
+        <tr id="tr1">
+            <th style="color: rgba(178, 105, 243, 0.772);"  onclick="clear1()">Ac</th>
+            <th style="color: rgba(178, 105, 243, 0.772);" onclick="cal()">%</th>
+            <th style="color: rgba(178, 105, 243, 0.772);" onclick="del()">del</th>
+            <th style="background-color: rgba(135, 6, 247, 0.772);" onclick="cal('/')">/</th> 
+        </tr>
+;
+        <tr id="tr2">
+            <th onclick="cal('7')">7</th>
+            <th onclick="cal('8')">8</th>
+            <th onclick="cal('9')">9</th>
+            <th style="background-color: rgba(135, 6, 247, 0.772);;" onclick="cal('*')">*</th>
+        </tr>
+
+        <tr id="tr3">
+            <th onclick="cal('4')">4</th>
+            <th onclick="cal('5')">5</th>
+            <th onclick="cal('6')">6</th>
+            <th style="background-color: rgba(135, 6, 247, 0.772);;" onclick="cal('-')">-</th>
+        </tr>
+
+        <tr id="tr4">
+            <th onclick="cal('1')">1</th>
+            <th onclick="cal('2')">2</th>
+            <th onclick="cal('3')">3</th>
+            <th style="background-color: rgba(135, 6, 247, 0.772);;" onclick="cal('+')">+</th>
+        </tr>
+
+        <tr id="tr5">
+            <th onclick="cal('00')">00</th>
+            <th onclick="cal('0')">0</th>
+            <th onclick="cal('.')">.</th>
+            <th style="background-color: rgba(155, 44, 252, 0.772);" onclick="solve()">=</th>
+        </tr>
+    </table>
+    <script src="sec.js"></script>
+</body>
+</html>
