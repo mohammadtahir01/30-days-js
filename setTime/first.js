@@ -37,6 +37,11 @@ function fun(){
    stop1= setInterval(() => {
        let inp = document.querySelector("#h1");
        count++;
+
+       if(count==5){
+        clearInterval(stop1);
+       }
+
        inp.innerHTML=`count ${count}`;
     },1000)
 }
@@ -46,5 +51,5 @@ function fun(){
 // clearInterval(set-interval-name)
 
 let stopp=()=>{
-    clearInterval(stop1);
+   
 }
